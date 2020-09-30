@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Penny: Fountain, Rollerball and Ballpoint pens for everyone</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179247359-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-179247359-1');
+  </script>
+
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="icon" href="feather.png" type="image/x-icon">
+<style>
+  body,
+  html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+  }
+
+  .bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("pen-bg.webp");
+    min-height: 85%;
+  }
+
+  .menu {
+    display: none;
+  }
+</style>
+
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"> TOP </button>
+  <!-- Links (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-row w3-padding w3-black">
+      <div class="w3-col s3">
+        <a href="#home" class="w3-button w3-block w3-black">HOME</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#products" class="w3-button w3-block w3-black">PODUCTS</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#contact" class="w3-button w3-block w3-black">CONTACT</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header with image -->
+  <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <meta name="description" content="At Penny, we sell high quality pens for different purposes. You can buy Ballpoint, Fountain and Rollerball pens in both a basic version or evan a premium one.">
+    <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+      <span class="w3-tag"></span>
+    </div>
+    <div class="w3-display-middle w3-center">
+      <span class="w3-text-black" style="font-size:70px;">Welcome to <br></span>
+      <span class="w3-text-black" style="font-size:110px;">Penny</span>
+    </div>
+    <div class="w3-display-bottomright w3-center w3-padding-large">
+      <span class="w3-text-black"></span>
+    </div>
+  </header>
+
+  <!-- Add a background color and large text to the whole page -->
+  <div class="w3-sand w3-grayscale w3-large">
+
+    <!-- About Container -->
+    <div class="w3-container" id="about">
+      <div class="w3-content" style="max-width:700px">
+        <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE COMPANY</span></h5>
+        <p>A pen is a common writing instrument used to apply ink to a surface, usually paper, for writing or drawing. Historically, reed pens, quill pens, and dip pens were used, with a nib dipped in ink. Ruling pens allow precise adjustment of line
+          width, and still find a few specialized uses, but technical pens such as the Rapidograph are more commonly used. Modern types include ballpoint, rollerball, fountain and felt or ceramic tip pens.</p>
+        <p>A ballpoint pen dispenses an oil-based ink by rolling a small hard sphere, usually 0.5–1.2 mm and made of brass, steel, or tungsten carbide. The ink dries almost immediately on contact with paper. The ballpoint pen is usually reliable and
+          comes in both inexpensive and expensive types. It has replaced the fountain pen as the most common tool for everyday writing.</p>
+        <div class="w3-panel w3-leftbar w3-light-grey">
+          <p><i>The world's largest functioning ballpoint pen was made by Acharya Makunuri Srinivasa in India. The pen measures 5.5 m (18 ft 0.53 in) long and weighs 37.23 kg (82.08 lb 1.24 oz).</i></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu Container -->
+    <div class="w3-container" id="products">
+      <div class="w3-content" style="max-width:700px">
+
+        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE COLLECTIONS</span></h5>
+
+        <div class="w3-row w3-center w3-card w3-padding">
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+            <div class="w3-col s6 tablink">Basic</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+            <div class="w3-col s6 tablink">Premier</div>
+          </a>
+        </div>
+
+        <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+          <h5>Fountain</h5>
+          <p class="w3-text-grey">Elegant and flawless writing instruments.</p><br>
+
+          <h5>Rollerball</h5>
+          <p class="w3-text-grey">A constant flow of ink for smooth writing.</p><br>
+
+          <h5>Ballpoint</h5>
+          <p class="w3-text-grey">Practical, fun, and expressive writing.</p><br>
+        </div>
+
+        <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+          <h5>Ballpoint</h5>
+          <p class="w3-text-grey">Practical, fun, and expressive writing.</p><br>
+
+          <h5>Fountain</h5>
+          <p class="w3-text-grey">Elegant and flawless writing instruments.</p><br>
+
+          <h5>Rollerball</h5>
+          <p class="w3-text-grey">A constant flow of ink for smooth writing.</p><br>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact/Area Container -->
+    <div class="w3-container" id="contact" style="padding-bottom:32px;">
+      <div class="w3-content" style="max-width:700px">
+        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONTACT US</span></h5>
+        <p>Find us at some address at some place.</p>
+        <p><span class="w3-tag">FYI!</span> We're not a real company, we just want to be at the top of Google!</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+          <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+        </form>
+      </div>
+    </div>
+
+    <!-- End page content -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+    <p><a href="https://www.kdg.be/" title="KdG" target="_blank" class="w3-hover-text-green">Karel de Grote Hogeschool</a></p>
+  </footer>
+
+  <script>
+    // Tabbed Menu
+    function openMenu(evt, menuName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("menu");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+    }
+    document.getElementById("myLink").click();
+
+    //Get the button:
+    mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+
+</body>
+
+</html>
